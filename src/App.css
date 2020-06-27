@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+.corona-img {
+  width: 28px;
+  height: 28px;
+}
+
+.spinner {
+  display: block;
+  width: 200px;
+  margin: 12rem auto 0;
+}
+
+.new-badge {
+  background-color: #ddd;
+  font-weight: 400;
+}
+
+.chart-style {
+  height: 56vh;
+  margin: 4rem 0.5rem;
+}
+
+/* Desktop screens and above */
+@media only screen and (min-width: 992px) {
+  .chart-style {
+    margin: 5rem;
+  }
+}
