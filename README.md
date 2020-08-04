@@ -1,15 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Live Demo: [https://covid2019tracker.netlify.app](https://covid2019tracker.netlify.app)
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [About](#about)
+- [Technologies](#technologies)
+- [Setup](#setup)
 
-### `npm start`
+## About
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project tracks the global and country-wise spread of the Coronavirus disease around the world.
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Project is created with:
+
+- React v16.13.1
+- React Chart.js v2.9.3
+- Axios v0.19.2
+- Bootstrap v4.5
+
+## Setup
+
+To run this project, install it locally using npm:
+
+```
+$ cd covid19-tracker
+$ npm install
+$ npm start
+```
