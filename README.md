@@ -1,5 +1,3 @@
-#### Live Demo: [https://covid2019tracker.netlify.app](https://covid2019tracker.netlify.app)
-
 ## About
 
 This project tracks the global and country-wise spread of the Coronavirus disease around the world.
