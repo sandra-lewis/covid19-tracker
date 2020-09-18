@@ -7,10 +7,10 @@ const Header = ({ date }) => {
 
   return (
     <Fragment>
-      <div className="bg-white shadow-sm d-flex">
+      <header className="shadow-sm d-flex">
         <img src={coronavirus} alt="" className="my-3 ml-3 mr-2 corona-img" />
         <h4 className="mt-3">COVID-19 Tracker</h4>
-      </div>
+      </header>
       <p className="text-right text-secondary mt-2 mr-3">
         Last Updated: {lastUpdated}
       </p>

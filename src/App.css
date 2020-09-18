@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 body {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
 }
@@ -14,11 +14,26 @@ body {
 .spinner {
   display: block;
   width: 200px;
-  margin: 12rem auto 0;
+  margin: 6rem auto 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-deck {
+  width: 100%;
+}
+
+input[type='text'],
+.card-body {
+  background-color: #f7f7f7;
+  box-shadow: 0 0 5px #ddd;
 }
 
 .new-badge {
-  background-color: #ddd;
+  background-color: #e4e4e4;
   font-weight: 400;
 }
 
@@ -27,9 +42,27 @@ body {
   margin: 4rem 0.5rem;
 }
 
-/* Desktop screens and above */
-@media only screen and (min-width: 992px) {
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 2px #ddd;
+}
+
+/* DESKTOP SCREENS AND ABOVE */
+@media only screen and (min-width: 1281px) {
+  .card-deck {
+    width: 75vw;
+  }
+
   .chart-style {
-    margin: 5rem;
+    display: block;
+    margin: 5rem auto;
+    width: 50vw;
   }
 }

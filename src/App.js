@@ -54,19 +54,27 @@ const App = () => {
     }
   };
 
-  if (loading) {
-    return <Loading />;
-  } else {
-    return (
-      <Fragment>
-        <Header date={date} />
-        <Countries countries={countries} countrySelector={countrySelector} />
-        <Cases cases={cases} />
-        <Chart topTenCountries={topTen} />
+  return (
+    <div className="wrapper">
+      <Header date={date} />
+      {loading === true ? (
+        <Fragment>
+          <Loading />
+          <h4 className="text-center mt-2">Updating the data...</h4>
+        </Fragment>
+      ) : (
+        <Fragment>
+          <Countries countries={countries} countrySelector={countrySelector} />
+          <Cases cases={cases} />
+          <Chart topTenCountries={topTen} />
+        </Fragment>
+      )}
+
+      <div className="pt-5">
         <Footer />
-      </Fragment>
-    );
-  }
+      </div>
+    </div>
+  );
 };
 
 export default App;

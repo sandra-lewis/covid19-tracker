@@ -20,9 +20,10 @@ const Countries = ({ countries, countrySelector }) => {
       <form className="form-inline justify-content-center mt-5">
         <div>
           <input
+            type="text"
             list="country-names"
-            className="form-control shadow-sm"
-            placeholder="Search..."
+            className="form-control"
+            placeholder="Search"
             onChange={onChange}
           />
           <datalist id="country-names">

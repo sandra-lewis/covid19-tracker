@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-white shadow d-flex flex-wrap justify-content-around pt-3">
+    <footer className="d-flex flex-wrap justify-content-around pt-3">
       <p className="mx-3 mb-0">
         Created by{' '}
         <a
@@ -23,7 +23,7 @@ const Footer = () => {
           covid19api.com
         </a>
       </p>
-    </div>
+    </footer>
   );
 };
 

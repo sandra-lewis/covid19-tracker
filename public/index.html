@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Track the global and country-wise spread of the Coronavirus disease with updates on the number cases, recoveries and deaths around the world."
+      content="Track the global and country-wise spread of the Coronavirus disease around the world."
     />
     <link rel="apple-touch-icon" href="./images/coronavirus.png" />
     <link rel="manifest" href="./manifest.json" />
@@ -25,10 +25,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register('./serviceworker.js')
-            .then((reg) => console.log('Success: ', reg.scope))
-            .catch((err) => console.log('Failure: ', err));
+          navigator.serviceWorker.register('./serviceworker.js');
         });
       }
     </script>
