@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div className="wrapper">
-      <Header date={date} />
+      <Header date={date} loading={loading} />
       {loading === true ? (
         <Fragment>
           <Loading />

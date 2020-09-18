@@ -24,7 +24,7 @@ body {
 }
 
 .card-deck {
-  width: fit-content;
+  min-width: 75vw;
 }
 
 input[type='text'],
@@ -57,10 +57,6 @@ footer {
 
 /* DESKTOP SCREENS AND ABOVE */
 @media only screen and (min-width: 1281px) {
-  .card-deck {
-    width: 75vw;
-  }
-
   .chart-style {
     display: block;
     margin: 5rem auto;
