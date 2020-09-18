@@ -15,7 +15,7 @@ const Cases = ({
   return (
     <div className="mx-5 d-flex flex-wrap justify-content-center">
       <div className="card-deck">
-        <div className="card card-body text-center">
+        <div className="card card-body align-items-center">
           <h3 className="card-title">Confirmed</h3>
           <h1 className="text-primary">
             <CountUp end={Number(TotalConfirmed)} duration={2} />
@@ -30,7 +30,7 @@ const Cases = ({
             'No New Cases'
           )}
         </div>
-        <div className="card card-body text-center">
+        <div className="card card-body align-items-center">
           <h3 className="card-title">Deceased</h3>
           <h1 className="text-danger">
             <CountUp end={Number(TotalDeaths)} duration={2} />
@@ -45,7 +45,7 @@ const Cases = ({
             'No New Deaths'
           )}
         </div>
-        <div className="card card-body text-center">
+        <div className="card card-body align-items-center">
           <h3 className="card-title">Recovered</h3>
           <h1 className="text-success">
             <CountUp end={Number(TotalRecovered)} duration={2} />
