@@ -6,21 +6,21 @@ defaults.global.defaultFontFamily = 'Roboto Condensed';
 
 const Chart = ({ topTenCountries }) => {
   const data = {
-    labels: topTenCountries.map((cname) => cname.Country),
+    labels: topTenCountries.map((cname) => cname.country),
     datasets: [
       {
         label: 'Confirmed',
-        data: topTenCountries.map((country) => country.TotalConfirmed),
+        data: topTenCountries.map((cname) => cname.cases),
         backgroundColor: 'rgba(122,186,255,0.9)',
       },
       {
         label: 'Deceased',
-        data: topTenCountries.map((country) => country.TotalDeaths),
+        data: topTenCountries.map((cname) => cname.deaths),
         backgroundColor: 'rgba(220,53,69,0.9)',
       },
       {
         label: 'Recovered',
-        data: topTenCountries.map((country) => country.TotalRecovered),
+        data: topTenCountries.map((cname) => cname.recovered),
         backgroundColor: 'rgba(102,172,103,0.9)',
       },
     ],

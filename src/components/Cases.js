@@ -3,14 +3,7 @@ import CountUp from 'react-countup';
 import PropTypes from 'prop-types';
 
 const Cases = ({
-  cases: {
-    NewConfirmed,
-    TotalConfirmed,
-    NewDeaths,
-    TotalDeaths,
-    NewRecovered,
-    TotalRecovered,
-  },
+  counts: { cases, todayCases, deaths, todayDeaths, recovered, todayRecovered },
 }) => {
   return (
     <div className="mx-5 d-flex flex-wrap justify-content-center">
@@ -18,12 +11,12 @@ const Cases = ({
         <div className="card card-body align-items-center">
           <h3 className="card-title">Confirmed</h3>
           <h1 className="text-primary">
-            <CountUp end={Number(TotalConfirmed)} duration={2} />
+            <CountUp end={Number(cases)} duration={2} />
           </h1>
-          {NewConfirmed !== 0 ? (
+          {todayCases !== 0 ? (
             <h4>
               <span className="badge new-badge mx-auto p-2">
-                +<CountUp end={Number(NewConfirmed)} duration={2} />
+                +<CountUp end={Number(todayCases)} duration={2} />
               </span>
             </h4>
           ) : (
@@ -33,12 +26,12 @@ const Cases = ({
         <div className="card card-body align-items-center">
           <h3 className="card-title">Deceased</h3>
           <h1 className="text-danger">
-            <CountUp end={Number(TotalDeaths)} duration={2} />
+            <CountUp end={Number(deaths)} duration={2} />
           </h1>
-          {NewDeaths !== 0 ? (
+          {todayDeaths !== 0 ? (
             <h4>
               <span className="badge new-badge mx-auto p-2">
-                +<CountUp end={Number(NewDeaths)} duration={2} />
+                +<CountUp end={Number(todayDeaths)} duration={2} />
               </span>
             </h4>
           ) : (
@@ -48,12 +41,12 @@ const Cases = ({
         <div className="card card-body align-items-center">
           <h3 className="card-title">Recovered</h3>
           <h1 className="text-success">
-            <CountUp end={Number(TotalRecovered)} duration={2} />
+            <CountUp end={Number(recovered)} duration={2} />
           </h1>
-          {NewRecovered !== 0 ? (
+          {todayRecovered !== 0 ? (
             <h4>
               <span className="badge new-badge mx-auto p-2">
-                +<CountUp end={Number(NewRecovered)} duration={2} />
+                +<CountUp end={Number(todayRecovered)} duration={2} />
               </span>
             </h4>
           ) : (
@@ -66,7 +59,7 @@ const Cases = ({
 };
 
 Cases.propTypes = {
-  cases: PropTypes.object.isRequired,
+  counts: PropTypes.object.isRequired,
 };
 
 export default Cases;

@@ -10,7 +10,7 @@ const Countries = ({ countries, countrySelector }) => {
       // Check if the entered value matches any option in the datalist
       if (e.target.value === countries.options[index].value) {
         setCountry(e.target.value);
-        countrySelector(index); // Pass index of the datalist option
+        countrySelector(e.target.value);
       }
     }
   };
@@ -29,8 +29,8 @@ const Countries = ({ countries, countrySelector }) => {
           <datalist id="country-names">
             <option value="Global">Global</option>
             {countries.map((place) => (
-              <option key={place.CountryCode} value={place.Country}>
-                {place.Country}
+              <option key={place.country} value={place.country}>
+                {place.country}
               </option>
             ))}
           </datalist>

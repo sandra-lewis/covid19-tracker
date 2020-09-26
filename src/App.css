@@ -56,10 +56,10 @@ footer {
 }
 
 /* DESKTOP SCREENS AND ABOVE */
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1025px) {
   .chart-style {
     display: block;
     margin: 5rem auto;
-    width: 50vw;
+    width: 45vw;
   }
 }

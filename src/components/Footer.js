@@ -15,12 +15,8 @@ const Footer = () => {
       </p>
       <p>
         Data sourced from{' '}
-        <a
-          href="https://covid19api.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          covid19api.com
+        <a href="https://disease.sh/" target="_blank" rel="noopener noreferrer">
+          disease.sh
         </a>
       </p>
     </footer>
